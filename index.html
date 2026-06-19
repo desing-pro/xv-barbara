@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<meta property="og:title" content="XV Bárbara Galindo Castro">
+<meta property="og:description" content="Te invitamos a celebrar esta noche tan especial.">
+<meta property="og:image" content="https://i.ibb.co/9kzJcDPj/jardin-assgar.jpg">
+<meta property="og:type" content="website">
+
+<title>XV Bárbara Galindo Castro</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--marfil:#FCFAF8;
+--lila:#E9DDF8;
+--lavanda:#CDB9E8;
+--lila-profundo:#8A74B0;
+--plata:#C8CCD3;
+--texto:#5B4C72;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Montserrat',sans-serif;
+
+background:
+radial-gradient(circle at top right,
+rgba(233,221,248,.6),
+transparent 35%),
+
+radial-gradient(circle at bottom left,
+rgba(205,185,232,.4),
+transparent 35%),
+
+var(--marfil);
+
+color:var(--texto);
+overflow-x:hidden;
+
+}
+
+section{
+padding:90px 25px;
+position:relative;
+}
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+}
+
+.card{
+
+max-width:950px;
+
+margin:auto;
+
+background:rgba(255,255,255,.78);
+
+backdrop-filter:blur(18px);
+
+border-radius:35px;
+
+padding:55px 40px;
+
+border:1px solid rgba(255,255,255,.9);
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.monograma{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:240px;
+
+line-height:1;
+
+margin-bottom:-100px;
+
+background:
+linear-gradient(
+180deg,
+#ffffff,
+#c8ccd3,
+#ffffff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+opacity:.55;
+
+}
+
+.titulo{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:5rem;
+
+letter-spacing:5px;
+
+font-weight:500;
+
+}
+
+.subtitulo{
+
+font-size:1.3rem;
+
+letter-spacing:2px;
+
+margin-bottom:25px;
+
+}
+
+.detalle{
+
+letter-spacing:5px;
+
+font-size:.9rem;
+
+color:var(--lila-profundo);
+
+margin-bottom:20px;
+
+}
+
+.flor{
+
+position:absolute;
+
+font-size:120px;
+
+opacity:.08;
+
+pointer-events:none;
+
+}
+
+.f1{
+top:0;
+left:0;
+}
+
+.f2{
+top:0;
+right:0;
+}
+
+.f3{
+bottom:0;
+left:0;
+}
+
+.f4{
+bottom:0;
+right:0;
+}
+
+h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:3rem;
+
+font-weight:500;
+
+margin-bottom:20px;
+
+color:var(--lila-profundo);
+
+text-align:center;
+
+}
+
+p{
+
+line-height:2;
+
+text-align:center;
+
+}
+
+.separador{
+
+width:140px;
+height:1px;
+
+margin:30px auto;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+var(--plata),
+transparent
+);
+
+}
+
+.evento-img{
+
+width:100%;
+
+height:420px;
+
+object-fit:cover;
+
+border-radius:25px;
+
+margin-bottom:25px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.ubicacion{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:14px 28px;
+
+background:var(--lila-profundo);
+
+color:white;
+
+border-radius:40px;
+
+text-decoration:none;
+
+}
+
+.center{
+text-align:center;
+}
+
+.contador{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:15px;
+
+margin-top:30px;
+
+}
+
+.box{
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,.05);
+
+}
+
+.numero{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:2.6rem;
+
+font-weight:600;
+
+}
+
+.whatsapp{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:15px 35px;
+
+background:#25D366;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:600;
+
+}
+
+footer{
+
+padding:60px 20px;
+
+text-align:center;
+
+font-size:.9rem;
+
+}
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:1s;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:none;
+
+}
+
+@media(max-width:768px){
+
+.monograma{
+
+font-size:150px;
+
+margin-bottom:-60px;
+
+}
+
+.titulo{
+
+font-size:3rem;
+
+}
+
+.contador{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+.card{
+
+padding:40px 25px;
+
+}
+
+.evento-img{
+
+height:250px;
+
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="flor f1">❀</div>
+<div class="flor f2">❀</div>
+<div class="flor f3">❀</div>
+<div class="flor f4">❀</div>
+
+<div class="card reveal">
+
+<div class="monograma">B</div>
+
+<div class="detalle">
+✦ MIS XV AÑOS ✦
+</div>
+
+<div class="titulo">
+BÁRBARA
+</div>
+
+<div class="subtitulo">
+GALINDO CASTRO
+</div>
+
+<p>
+Tengo el honor de invitarte
+a celebrar conmigo esta noche tan especial
+</p>
+
+<div class="separador"></div>
+
+<p>
+<strong>10 de Julio de 2026</strong>
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card reveal">
+
+<h2>
+Con la Bendición de Dios
+y el Amor de Mis Padres
+</h2>
+
+<p>
+Ivonne Castro Tapia
+<br><br>
+&
+<br><br>
+José Luis Galindo Torres
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card reveal">
+
+<h2>
+Acompañada por Mis Padrinos
+</h2>
+
+<p>
+
+José Luis Galindo Castro
+
+<br><br><br>
+
+Julia Cristina López Sánchez
+
+<br><br><br>
+
+Olga Patricia Castro Tapia
+
+<br><br><br>
+
+Ramón Parga Reynoso
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card reveal">
+
+<h2>
+Bienvenida
+</h2>
+
+<p>
+Hay momentos en la vida que imaginamos por siempre.
+</p>
+
+<br>
+
+<p>
+Hoy, con alegría en mi corazón,
+celebro una etapa llena de sueños,
+ilusiones y esperanza.
+</p>
+
+<br>
+
+<p>
+Me encantará compartir contigo
+esta noche tan especial.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card reveal">
+
+<h2>
+Ceremonia Religiosa
+</h2>
+
+<img
+src="https://static.wixstatic.com/media/80ed73_3120b5b8df70460a81d4e16a0f3d13ab~mv2.png/v1/fill/w_980,h_648,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Parroquia%20del%20Esp%C3%ADritu%20Santo.png"
+class="evento-img"
+alt="Parroquia del Espíritu Santo">
+
+<p>
+<strong>Parroquia del Espíritu Santo</strong>
+</p>
+
+<p>
+18:00 hrs
+</p>
+
+<p>
+Avenida Ingenieros S/N,
+Filadelfia,
+35010 Gómez Palacio, Durango
+</p>
+
+<div class="center">
+
+<a
+class="ubicacion"
+href="https://maps.app.goo.gl/RLzcdTq28s2TxUWF8"
+target="_blank">
+
+Cómo llegar
+
+</a>
+</div>
+</div>
+
+</section>
+
+<section>
+
+<div class="card reveal">
+
+<h2>
+Recepción
+</h2>
+
+<img
+src="https://i.ibb.co/9kzJcDPj/jardin-assgar.jpg"
+class="evento-img"
+alt="Jardín Assgar">
+
+<p>
+<strong>Jardín Assgar</strong>
+</p>
+
+<p>
+21:00 hrs
+</p>
+
+<p>
+Avenida del Consuelo 139,
+Rincón San Antonio,
+35015 Gómez Palacio, Durango
+</p>
+
+<div class="center">
+
+<a
+class="ubicacion"
+href="https://maps.app.goo.gl/GnzoC33BcsirxhwA9"
+target="_blank">
+
+Cómo llegar
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card reveal">
+
+<h2>
+Código de Vestimenta
+</h2>
+
+<p>
+<strong>Formal Elegante</strong>
+</p>
+
+<div class="separador"></div>
+
+<p>
+Te invitamos a vestir elegante
+para acompañarnos en esta noche
+tan especial.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card reveal">
+
+<h2>
+Lluvia de Sobres
+</h2>
+
+<p>
+El mejor regalo es tu compañía.
+</p>
+
+<div class="separador"></div>
+
+<p>
+Si deseas obsequiarme un detalle
+en esta ocasión tan especial,
+agradeceré tu participación en la
+tradicional lluvia de sobres.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card reveal">
+
+<h2>
+Cuenta Regresiva
+</h2>
+
+<div class="contador">
+
+<div class="box">
+<div class="numero" id="dias">0</div>
+Días
+</div>
+
+<div class="box">
+<div class="numero" id="horas">0</div>
+Horas
+</div>
+
+<div class="box">
+<div class="numero" id="minutos">0</div>
+Minutos
+</div>
+
+<div class="box">
+<div class="numero" id="segundos">0</div>
+Segundos
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card reveal">
+
+<h2>
+Confirmación de Asistencia
+</h2>
+
+<p>
+Agradeceremos confirmar tu asistencia
+por WhatsApp.
+</p>
+
+<div class="center">
+
+<a
+class="whatsapp"
+href="https://wa.me/528713563255?text=Hola,%20confirmo%20mi%20asistencia%20a%20los%20XV%20años%20de%20Bárbara."
+target="_blank">
+
+Confirmar asistencia
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card reveal">
+
+<h2>
+Gracias
+</h2>
+
+<p>
+Gracias por acompañarme en uno de los días
+más importantes de mi vida.
+</p>
+
+<br>
+
+<p>
+Tu presencia hará de esta celebración
+un recuerdo inolvidable.
+</p>
+
+<div class="separador"></div>
+
+<p>
+
+Con cariño
+
+<br><br>
+
+<strong>
+Bárbara Galindo Castro
+</strong>
+
+</p>
+
+</div>
+
+</section>
+
+<script>
+
+const fechaEvento =
+new Date("July 10, 2026 18:00:00").getTime();
+
+setInterval(() => {
+
+const ahora = new Date().getTime();
+
+const distancia =
+fechaEvento - ahora;
+
+document.getElementById("dias").innerHTML =
+Math.floor(
+distancia /
+(1000 * 60 * 60 * 24)
+);
+
+document.getElementById("horas").innerHTML =
+Math.floor(
+(distancia %
+(1000 * 60 * 60 * 24))
+/
+(1000 * 60 * 60)
+);
+
+document.getElementById("minutos").innerHTML =
+Math.floor(
+(distancia %
+(1000 * 60 * 60))
+/
+(1000 * 60)
+);
+
+document.getElementById("segundos").innerHTML =
+Math.floor(
+(distancia %
+(1000 * 60))
+/
+1000
+);
+
+},1000);
+
+const reveals =
+document.querySelectorAll('.reveal');
+
+window.addEventListener('scroll',()=>{
+
+reveals.forEach(el=>{
+
+const top =
+el.getBoundingClientRect().top;
+
+if(top < window.innerHeight - 100){
+
+el.classList.add('active');
+
+}
+
+});
+
+});
+
+window.dispatchEvent(
+new Event('scroll')
+);
+
+</script>
+
+</body>
+</html>
